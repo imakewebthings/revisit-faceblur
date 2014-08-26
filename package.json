@@ -1,0 +1,31 @@
+{
+  "name": "revisit-faceblur",
+  "version": "0.0.0",
+  "description": "Revisit service for blurring faces",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "0.10.31",
+    "npm": "1.4.23"
+  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imakewebthings/revisit-faceblur"
+  },
+  "keywords": [
+    "revisit"
+  ],
+  "author": "Caleb Troughton <caleb@imakewebthings.com> (http://imakewebthings.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imakewebthings/revisit-faceblur/issues"
+  },
+  "homepage": "https://github.com/imakewebthings/revisit-faceblur",
+  "dependencies": {
+    "data-uri-to-buffer": "0.0.3",
+    "faceblur": "^1.0.0",
+    "restify": "^2.8.2"
+  }
+}
