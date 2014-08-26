@@ -11,7 +11,7 @@ server.use(restify.bodyParser({
 }))
 
 server.head('/', function(req, res, next) {
-  res.send(200()
+  res.send(200)
 })
 
 server.post('/service', function(req, res, next) {
