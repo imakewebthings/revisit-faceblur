@@ -2,7 +2,7 @@ var restify = require('restify')
 var dataUriToBuffer = require('data-uri-to-buffer')
 var faceblur = require('faceblur')
 var server = restify.createServer()
-var port = process.env.PORT || 3000
+var port = process.env.PORT || 8000
 
 server.use(restify.acceptParser(server.acceptable))
 server.use(restify.bodyParser({
