@@ -10,10 +10,8 @@ server.use(restify.bodyParser({
   mapParams: false
 }))
 
-server.get('/', function(req, res, next) {
-  res.json(200, {
-    status: 'OK'
-  })
+server.head('/', function(req, res, next) {
+  res.send(200()
 })
 
 server.post('/service', function(req, res, next) {
