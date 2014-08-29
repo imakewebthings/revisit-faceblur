@@ -17,6 +17,10 @@ server.head('/', function(req, res, next) {
 server.post('/service', function(req, res, next) {
   var buffer = dataUriToBuffer(req.body.content.data)
 
+  if (['jpeg', 'png', 'gif'].indexOf(buffer.type) === -1) {
+    return res.json(req.body)
+  }
+
   faceblur(buffer, function(err, blurred) {
     var data = [
       'data:',
